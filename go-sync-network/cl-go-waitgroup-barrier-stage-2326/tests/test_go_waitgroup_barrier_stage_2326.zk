@@ -1,0 +1,10 @@
+// cl-go-waitgroup-barrier-stage-2326: Test Suite
+import "../gwg_2326.zk"
+
+fn test_run():
+    res := waitgroup_delta_2326(5, -1)
+    if res != 4 + 2326: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-waitgroup-barrier-stage-2326!")

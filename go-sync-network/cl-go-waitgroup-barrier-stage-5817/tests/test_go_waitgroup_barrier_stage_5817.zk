@@ -1,0 +1,10 @@
+// cl-go-waitgroup-barrier-stage-5817: Test Suite
+import "../gwg_5817.zk"
+
+fn test_run():
+    res := waitgroup_delta_5817(5, -1)
+    if res != 4 + 5817: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-waitgroup-barrier-stage-5817!")

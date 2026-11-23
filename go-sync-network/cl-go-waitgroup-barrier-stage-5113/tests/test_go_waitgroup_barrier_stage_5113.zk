@@ -1,0 +1,10 @@
+// cl-go-waitgroup-barrier-stage-5113: Test Suite
+import "../gwg_5113.zk"
+
+fn test_run():
+    res := waitgroup_delta_5113(5, -1)
+    if res != 4 + 5113: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-waitgroup-barrier-stage-5113!")

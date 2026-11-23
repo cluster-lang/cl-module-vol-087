@@ -1,0 +1,10 @@
+// cl-go-waitgroup-barrier-stage-4981: Test Suite
+import "../gwg_4981.zk"
+
+fn test_run():
+    res := waitgroup_delta_4981(5, -1)
+    if res != 4 + 4981: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-waitgroup-barrier-stage-4981!")

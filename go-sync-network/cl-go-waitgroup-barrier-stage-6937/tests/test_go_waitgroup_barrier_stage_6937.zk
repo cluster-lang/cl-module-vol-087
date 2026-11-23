@@ -1,0 +1,10 @@
+// cl-go-waitgroup-barrier-stage-6937: Test Suite
+import "../gwg_6937.zk"
+
+fn test_run():
+    res := waitgroup_delta_6937(5, -1)
+    if res != 4 + 6937: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-waitgroup-barrier-stage-6937!")

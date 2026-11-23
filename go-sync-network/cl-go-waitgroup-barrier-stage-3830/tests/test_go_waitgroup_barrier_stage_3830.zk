@@ -1,0 +1,10 @@
+// cl-go-waitgroup-barrier-stage-3830: Test Suite
+import "../gwg_3830.zk"
+
+fn test_run():
+    res := waitgroup_delta_3830(5, -1)
+    if res != 4 + 3830: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-waitgroup-barrier-stage-3830!")
